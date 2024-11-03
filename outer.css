@@ -90,6 +90,12 @@ body {
 .iconhollow {
   height: 30px;
   width: 30px;
+  transition: transform 0.3s ease;
+}
+
+
+.iconhollow:hover {
+  transform: scale(1.3) rotate(10deg);
 }
 
 .links {
@@ -102,7 +108,6 @@ body {
   width: 400px;
   height: 24px;
   flex: 1 1 100%;
-  position: relative;
 }
 
 .guias {
@@ -360,4 +365,79 @@ footer {
 
 .icones:hover {
   transform: scale(1.3) rotate(10deg);
+}
+
+@media (max-width: 1200px) {
+  .navbar-tipo-1 {
+    padding: 0px 40px;
+  }
+
+  .silk-shadows, .guias {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .descricao {
+    padding: 20px 50px;
+  }
+
+  .linha-padrao1,
+  .linha-padrao2 {
+    padding: 10px 50px;
+    flex-direction: column;
+  }
+
+  .text-destino {
+    padding: 0px 20px;
+    flex-direction: column;
+  }
+
+  .imgs-icon {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-tipo-1 {
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .silk-shadows, .guias {
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 24px;
+  }
+
+  .descricao {
+    padding: 20px;
+  }
+
+  .linha-padrao1,
+  .linha-padrao2 {
+    padding: 10px 20px;
+  }
+
+  .text-destino {
+    padding: 0px 10px;
+    gap: 20px;
+  }
+
+  .imgs-icon {
+    flex-direction: column;
+  }
 }

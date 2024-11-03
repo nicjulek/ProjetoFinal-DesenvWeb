@@ -624,3 +624,77 @@ footer {
 .icones:hover {
     transform: scale(1.3) rotate(10deg);
 }
+
+@media (max-width: 480px) {
+    .navbar-tipo-1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .conqdialogo, .conqacao, .conqdific, .conqreput, .conqespec, .conqgrupo{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        padding: 10px;
+        align-self: center;
+    }
+
+    .conqdific{
+        gap: 5px;
+    }
+
+    .conqpadrao{
+        width: 400px;
+    }
+
+    .linha-1-espec,.linha-1-linha-4-dialogo,.linha-1-reput,.linha-4-acao,.linha-4-dialogo,.linha-acao,.linha-dialogo,.linha-espec{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+        width: 400px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    .silk-shadows, .guias {
+        font-size: 20px;
+        width: auto;
+        text-align: center;
+      }
+    
+      .titulo {
+        font-size: 24px;
+      }
+
+    .conteudo {
+        padding: 10px 5px; 
+    }
+
+    .desc {
+        padding: 10px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-tipo-1 {
+        padding: 0px 80px;
+    }
+
+    .silk-shadows {
+        font-size: 30px;
+        width: 400px; 
+    }
+
+    .links {
+        gap: 30px;
+    }
+
+    .conteudo {
+        padding: 20px 90px; 
+    }
+
+    .titulo {
+        font-size: 36px; 
+    }
+
+}
