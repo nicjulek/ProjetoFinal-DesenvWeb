@@ -1,0 +1,834 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./imagens/gris_img/gris-guia-conquistas.png') center;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}  
+
+.livvic-regular {
+  font-family: "Livvic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic-bold", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gris-guia-conquistas,
+.gris-guia-conquistas * {
+  box-sizing: border-box;
+}
+.gris-guia-conquistas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-tipo-1 {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 1) 0%, #626868 100%);
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  align-self: stretch;  
+  height: 48px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.silk-shadows {
+  display: flex;
+  color: #c4cad0;
+  align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Livvic", sans-serif;
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 400;
+  width: 400px;
+  flex: 1 1 100%;
+  transition: color 0.3s ease;
+}
+
+.silk-shadows:hover {
+  color: #5c4974;
+}
+
+.iconhollow {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.iconhollow:hover {
+  transform: scale(1.3) rotate(10deg);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 400px;
+  height: 24px;
+  flex: 1 1 100%;
+}
+
+.guias {
+  color: #12130f;
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.guias:hover {
+  color: #5c4974;
+}
+
+.conteudo {
+  display: flex;
+  font-family: "Livvic", sans-serif;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.linha {
+  padding: 10px 70px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titulo {
+  color: #c4cad0;
+  text-align: left;
+  font-family: "Livvic-bold", sans-serif;
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: 700;
+  align-self: stretch;
+  height: 50.31px;
+}
+
+.conteudo-linha-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+}
+.descricao, .descricao-conquistas-campanha, .descricao-conquistas-nivel, .texto-conquista {
+  padding: 10px;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.descricao:hover, .descricao-conquistas-campanha:hover, .descricao-conquistas-nivel:hover, .texto-conquista:hover {
+  transform: translateY(-2px);
+}
+
+
+.text-descricao {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+.imagedescricao {
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 228.39px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagedescricao:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /
+}
+
+.conquistas-campanha {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+}
+.titulo-campanha, .titulo-nivel {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+.conteudo-conquistas-campanha, .conteudo-conquistas-nivel {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+.descricao-conquistas-campanha, .descricao-conquistas-nivel {
+  align-self: stretch;
+}
+.conquistas-camp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+.caixa-conquista {
+  background: rgba(138, 112, 144, 0.7); 
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-conquista {
+  border-radius: 9px;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagem-conquista:hover {
+  transform: scale(1.1);
+}
+
+.texto-conquista {
+  flex: 1;
+}
+
+.conquistas-nivel {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+} 
+.conquistas-niv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+.descricao-inuksuit {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 0.7), rgba(188, 35, 55, 0.7));
+  border-radius: 9px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px; 
+  max-width: 1000px; 
+}
+
+.inuksuit2,
+.text-conq-inuksuit {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.inuksuit2 {
+  font-size: 20px;
+  line-height: 1.4; 
+}
+
+.text-conq-inuksuit {
+  font-size: 14px;
+  line-height: 1.4; 
+}
+
+
+.linha-estatuas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+  justify-content: center;
+  align-self: stretch;
+}
+
+.estatua,
+.estatua-1314 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.text-est-tua,
+.text-est-tua-13-14 {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 16px;
+  line-height: 1.4; 
+}
+
+
+.imageestatua,
+.imageestatua-1314 {
+  border-radius: 9px;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+.linha-5-estatuas {
+  padding: 0 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  .linha-estatuas {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+
+  .linha-5-estatuas {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linha-estatuas {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  .linha-5-estatuas {
+    padding: 0 20px; 
+  }
+}
+
+
+.imageestatua,
+.imageestatua-1314 {
+  border-radius: 9px;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.imageestatua:hover,
+.imageestatua-1314:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.estatua,
+.estatua-1314 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+  transition: box-shadow 0.3s ease; 
+}
+
+
+.descricao-macas {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 0.7), rgba(86, 169, 141, 0.7));
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px; 
+  max-width: 1000px; 
+}
+
+.titulo-maca,
+.text-macas {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.titulo-maca {
+  font-size: 20px;
+  line-height: 1.4; 
+}
+
+.text-macas {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.linha-macas {
+  padding: 10px 150px;
+  display: flex;
+  gap: 108px;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.maca {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.imagemaca {
+  border-radius: 9px;
+  height: 225px;
+  object-fit: cover;
+  align-self: stretch;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagemaca:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.desc-maca {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-self: stretch;
+}
+
+
+.descricao-aves {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 0.7), rgba(49, 61, 119, 0.7));
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.titulo-aves-m-gicas,
+.text-aves,
+.titulo-passaro,
+.text-passaro {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.titulo-aves-m-gicas {
+  font-size: 20px;
+}
+
+.text-aves {
+  font-size: 14px;
+}
+
+.linha-aves {
+  display: flex;
+  justify-content: center;
+}
+
+.passaro {
+  flex: 1 0 32%;
+  min-width: 300px; 
+  max-width: 350px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo-passaro {
+  font-size: 16px;
+  line-height: 1.4; 
+}
+
+.desc-passaro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.imagepassaro {
+  border-radius: 9px;
+  width: 100%; 
+  height: auto; 
+  align-items: center;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagepassaro:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+.tempestadedeareia,
+.enguia2 {
+  display: inline-flex; 
+  flex-direction: column; 
+  flex: 1; 
+  min-width: 250px; 
+  max-width: 1000px;
+}
+
+.tempestadedeareia {
+  background: linear-gradient(
+    180deg,
+    rgba(138, 112, 144, 0.7) 0%,
+    rgba(238, 160, 148, 0.7) 100%
+  );
+  border-radius: 9px;
+  padding: 10px;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1; 
+  min-width: 250px; 
+  max-width: 1000px; 
+}
+
+.titulo-tempestade {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+.text-tempestade2 {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+.enguia2 {
+  background: linear-gradient(
+    180deg,
+    rgba(138, 112, 144, 0.7) 0%,
+    rgba(89, 157, 194, 0.7) 100%
+  );
+  border-radius: 9px;
+  padding: 10px;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 250px; 
+  max-width: 1000px;
+}
+.titulo-enguia {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.text-enguia2 {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.descricao-fases {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 0.7) 0%, rgba(253, 249, 246, 0.49) 100%);
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.titulo-fases {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.text-fases {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.f-fase-1 {
+  padding: 10px 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.text-fase {
+  background: rgba(213, 213, 213, 0.4);
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.imagefase-icon {
+  border-radius: 9px;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagefase-icon:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-fase {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+}
+
+.desc-fase {
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+}
+
+.imagefase {
+  border-radius: 9px;
+  width: 380px;  
+  height: 240px; 
+  object-fit: cover; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagefase:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fase {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgs-fase {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.imgs-fase-2 {
+  display: flex; 
+  flex-direction: row; 
+  gap: 30px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.colecionador, .text-infancia {
+  background: linear-gradient(
+    180deg,
+    rgba(138, 112, 144, 0.7) 0%,
+    rgba(199, 145, 110, 0.7) 100%
+  );
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.text-infancia{
+  background: linear-gradient(
+    180deg,
+    rgba(138, 112, 144, 0.7) 0%,
+    rgba(54, 52, 115, 0.7) 100%
+  );
+}
+
+.titulo {
+  text-align: left;
+  font-family: "Livvicr", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.desc {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.desc-span, .desc-span2 {
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.desc-span2 {
+  color: #ff0825;
+}
+.imageinfancia {
+  border-radius: 9px;
+  width: 380px; 
+  height: 240px; 
+  display: block;
+  margin: 20px auto; 
+  padding: 0; 
+  object-fit: cover; 
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imageinfancia:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 25, 118, 1) 0%,
+    rgba(46, 26, 86, 1) 100%
+  );
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-self: center;
+  width: 100vw;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 0px 7px 7px 0px rgba(0, 0, 0, 0.17);
+}
+.feito-por-nicole-julek-klazura {
+  color: #fcf7ff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.icones {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.icones:hover {
+  transform: scale(1.3) rotate(10deg);
+}

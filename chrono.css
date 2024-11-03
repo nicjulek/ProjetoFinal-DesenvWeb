@@ -1,0 +1,449 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./imagens/chrono_img/chrono-trigger-guia-conquistas.png') center;
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.livvic-regular {
+  font-family: "Livvic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic-bold", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chrono-trigger-guia-conquistas,
+.chrono-trigger-guia-conquistas * {
+  box-sizing: border-box;
+}
+
+.chrono-trigger-guia-conquistas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconhollow {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.iconhollow:hover {
+  transform: scale(1.3) rotate(10deg);
+}
+.navbar-tipo-1 {
+    background: linear-gradient(180deg, rgba(138, 112, 144, 1) 0%, #626868 100%);
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    height: 48px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.silk-shadows {
+    display: flex;
+    color: #c4cad0;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: "Livvic", sans-serif;
+    font-size: 30px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 400px;
+    flex: 1 1 100%;
+    transition: color 0.3s ease;
+}
+
+.silk-shadows:hover {
+    color: #5c4974;
+}
+
+.iconhollow {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.iconhollow:hover {
+    transform: scale(1.3) rotate(10deg);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 24px;
+    flex: 1 1 100%;
+}
+
+
+.guias {
+  color: #12130f;
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.guias:hover {
+  color: #5c4974;
+}
+.main,
+.conquistas,
+.descricao,
+.conteudo,
+.conteudo2
+ {
+    display: flex;
+    font-family: "Livvic", sans-serif;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 20px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    align-self: stretch;
+}
+.main {
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  animation: slideInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.descricao {
+  justify-content: center;
+  padding-bottom: 20px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo, .conteudo2 {
+  padding: 20px 70px 20px 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  color: #c4cad0;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  width: 648px;
+}
+
+.text-descricao {
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.imagens {
+  padding: 0px 200px 0px 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.imagem-1, .imgem-2 {
+  border-radius: 12px;
+  flex: 1;
+  height: 225px;
+  position: relative;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagem-1:hover {
+  transform: scale(1.02) rotate(2deg);
+}
+
+.imgem-2:hover{
+  transform: scale(1.02) rotate(-2deg);
+}
+
+.linha {
+  margin-top: -1.5px;
+  border-top: 1.5px solid #ffffff;
+  width: 1054.04px;
+  position: relative;
+}
+
+.conquistas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.conteudo2 {
+  padding: 0px 80px 0px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 113px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.coluna-1 {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  max-width: 650px; 
+  min-width: 300px; 
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.conquistas-padrao{
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0; 
+}
+
+.conquistas-amarelo{
+  background: linear-gradient(180deg,
+  rgba(133, 79, 15, 0.7) 0%,
+  rgba(244, 167, 29, 0.7) 100%);
+}
+
+.conquistas-verde{
+  background: linear-gradient(180deg,
+      rgba(97, 97, 74, 0.7) 0%,
+      rgba(69, 94, 29, 0.66) 100%);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.conquistas-padrao:hover, 
+.conquistas-amarelo:hover, 
+.conquistas-verde:hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 99px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.imagensicones {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    position: relative;
+}
+
+.titulo-padrao {
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  width: 500px;
+}
+
+.desc-conq {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  width: 500px;
+}
+
+.titulo-conq{
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  width: 500px;
+}
+
+.descricao-conq {
+  font-family: "Livvic", sans-serif;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.img-padrao {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.coluna-2 {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  max-width: 650px; 
+  min-width: 300px; 
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo2 {
+  flex-shrink: 0;
+  width: 664px;
+  height: 230px;
+  position: relative;
+  object-fit: cover;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.logo2:hover {
+  animation: pulse 0.8s ease infinite;
+}
+
+
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 25, 118, 1) 0%,
+    rgba(46, 26, 86, 1) 100%
+  );
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-self: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 0px 7px 7px 0px rgba(0, 0, 0, 0.17);
+}
+.feito-por-nicole-julek-klazura {
+  color: #fcf7ff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.icones {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.icones:hover {
+  transform: scale(1.3) rotate(10deg);
+}

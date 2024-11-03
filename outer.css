@@ -1,0 +1,363 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./imagens/outer_img/outer-wilds-guia.png') center;
+  background-attachment: fixed;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.livvic-regular {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.outer-wilds-guia,
+.outer-wilds-guia * {
+  box-sizing: border-box;
+}
+
+.outer-wilds-guia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-tipo-1 {
+  background: linear-gradient(180deg, rgba(138, 112, 144, 1) 0%, #626868 100%);
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  align-self: stretch;  
+  height: 48px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.silk-shadows {
+  display: flex;
+  color: #c4cad0;
+  align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Livvic", sans-serif;
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 400px;
+  flex: 1 1 100%;
+  transition: color 0.3s ease;
+}
+
+.silk-shadows:hover {
+  color: #5c4974;
+}
+
+.iconhollow {
+  height: 30px;
+  width: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 400px;
+  height: 24px;
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.guias {
+  color: #12130f;
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.guias:hover {
+  color: #5c4974;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.descricao {
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.titulo {
+  color: #c4cad0;
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+
+.conteudo {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.linha-padrao1 {
+  padding: 10px 100px 10px 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.conq-padrao {
+  background: rgba(22, 27, 51, 0.5);
+  border-radius: 9px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.conq-padrao:hover {
+  transform: translateY(10px) scale(1.02); 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
+  background-color: rgba(22, 27, 51, 0.7); 
+}
+
+.imgs-icon {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.imagem-conquista:hover {
+  transform: scale(1.1);
+}
+
+
+.image-icone {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  object-fit: cover;
+}
+
+.titulo-padrao {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+
+.text-linha {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.linha-padrao2 {
+  padding: 10px 200px 10px 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 113px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.text-linha-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.imagens {
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 190px;
+  position: relative;
+  object-fit: cover;
+}
+
+.text-destino {
+  padding: 0px 140px 0px 140px;
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.coluna-destino {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.descricao-padrao {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(45, 25, 118, 1) 0%,
+    rgba(46, 26, 86, 1) 100%
+  );
+  padding: 24px 80px 24px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: inset 0px 7px 7px 0px rgba(0, 0, 0, 0.17);
+}
+.feito-por-nicole-julek-klazura {
+  color: #fcf7ff;
+  text-align: left;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.icones {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.icones:hover {
+  transform: scale(1.3) rotate(10deg);
+}
