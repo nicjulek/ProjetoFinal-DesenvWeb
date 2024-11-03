@@ -417,6 +417,7 @@ footer {
     font-size: 20px;
     width: auto;
     text-align: center;
+    align-self: center;
   }
 
   .titulo {

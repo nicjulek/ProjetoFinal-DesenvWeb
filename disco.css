@@ -104,16 +104,19 @@ body {
 .guias:hover {
     color: #5c4974;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 .conteudo {
     display: flex;
     font-family: "Livvic", sans-serif;
@@ -123,7 +126,7 @@ body {
     justify-content: center;
     align-self: stretch;
     padding: 20px 90px 20px 90px;
-    animation: fadeIn 0.5s ease forwards; 
+    animation: fadeIn 0.5s ease forwards;
 }
 
 .descricao {
@@ -144,7 +147,9 @@ body {
     flex: 1;
 }
 
-.frame-129, .frame-126, .frame-125{
+.frame-129,
+.frame-126,
+.frame-125 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -160,7 +165,7 @@ body {
     flex: 1;
 }
 
-.frame-126{
+.frame-126 {
     padding: 0px 10px 0px 10px;
 }
 
@@ -168,7 +173,10 @@ body {
     flex-direction: row;
 }
 
-.image-190, .image-192, .image-193, .image-191 {
+.image-190,
+.image-192,
+.image-193,
+.image-191 {
     border-radius: 4px;
     border: 3px solid #2b140e;
     box-shadow: 6px 6px 6px rgba(43, 20, 14, 0.35);
@@ -179,7 +187,8 @@ body {
     height: 225px;
 }
 
-.image-192, .image-193 {
+.image-192,
+.image-193 {
     height: 172px;
     flex: 1;
 }
@@ -187,7 +196,7 @@ body {
 .image-191 {
     width: 244px;
     height: 333px;
-}   
+}
 
 .desc {
     padding: 2vw 3vw 2vw 2vw;
@@ -237,7 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%; /* Para preencher a largura disponível */
+    width: 100%;
 }
 
 .titulopadrao {
@@ -283,7 +292,8 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.conqpadrao:hover, .conqtirah:hover {
+.conqpadrao:hover,
+.conqtirah:hover {
     transform: scale(1.030);
 }
 
@@ -407,7 +417,8 @@ body {
     align-self: stretch;
 }
 
-.linha-dialogo, .linha-4-dialogo {
+.linha-dialogo,
+.linha-4-dialogo {
     display: flex;
     flex-direction: row;
     gap: 43px;
@@ -452,7 +463,8 @@ body {
 
 }
 
-.linha-acao, .linha-4-acao {
+.linha-acao,
+.linha-4-acao {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -461,6 +473,7 @@ body {
     align-self: stretch;
 
 }
+
 .linha-4-acao {
     padding: 0px 140px 0px 140px;
     gap: 208px;
@@ -631,47 +644,90 @@ footer {
         padding: 20px;
     }
 
-    .conqdialogo, .conqacao, .conqdific, .conqreput, .conqespec, .conqgrupo{
+    .silk-shadows,
+    .guias {
+        font-size: 20px;
+        width: auto;
+        text-align: center;
+        align-self: center;
+    }
+
+    .imagensdescricao{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .descricao,
+    .conqdialogo,
+    .conqacao,
+    .conqdific,
+    .conqreput,
+    .conqespec,
+    .conqgrupo {
         flex-direction: column;
         flex-wrap: wrap;
         width: 400px;
         padding: 10px;
+        gap: 5px;
         align-self: center;
     }
 
-    .conqdific{
+    .conqdific {
         gap: 5px;
+    }
+
+    .conqtirah{
+        width: 380px;
+        flex-direction: column;
+        align-self: center;
     }
 
     .conqpadrao{
-        width: 400px;
-    }
-
-    .linha-1-espec,.linha-1-linha-4-dialogo,.linha-1-reput,.linha-4-acao,.linha-4-dialogo,.linha-acao,.linha-dialogo,.linha-espec{
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 5px;
-        width: 400px;
-        padding: 20px;
+        width: 380px;
+        padding: 10px 0px;
         align-self: center;
     }
 
-    .silk-shadows, .guias {
+    .descpadrao{
+        padding: 10px 10px;
+        width: 400px;
+    }
+
+    .linha-1-espec,
+    .linha-1-linha-4-dialogo,
+    .linha-1-reput,
+    .linha-4-acao,
+    .linha-4-dialogo,
+    .linha-acao,
+    .linha-dialogo,
+    .linha-espec {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0px;
+        width: 400px;
+        padding: 10px;
+        align-self: center;
+        justify-items: center;
+    }
+
+    .silk-shadows,
+    .guias {
         font-size: 20px;
         width: auto;
         text-align: center;
-      }
-    
-      .titulo {
+    }
+
+    .titulo {
         font-size: 24px;
-      }
+    }
 
     .conteudo {
-        padding: 10px 5px; 
+        padding: 10px 5px;
     }
 
     .desc {
-        padding: 10px; 
+        padding: 10px;
+        gap: 5px;
     }
 }
 
@@ -679,10 +735,9 @@ footer {
     .navbar-tipo-1 {
         padding: 0px 80px;
     }
-
     .silk-shadows {
         font-size: 30px;
-        width: 400px; 
+        width: 400px;
     }
 
     .links {
@@ -690,11 +745,11 @@ footer {
     }
 
     .conteudo {
-        padding: 20px 90px; 
+        padding: 20px 90px;
     }
 
     .titulo {
-        font-size: 36px; 
+        font-size: 36px;
     }
 
 }

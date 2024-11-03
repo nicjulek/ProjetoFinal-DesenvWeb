@@ -432,11 +432,19 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .navbar-tipo-1 {
-    flex-direction: column; 
-    padding: 10px; 
+    flex-direction: column;
+    padding: 20px;
     height: 100%;
+  }
+
+  .silk-shadows,
+  .guias {
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    align-self: center;
   }
   
   .destaque {
