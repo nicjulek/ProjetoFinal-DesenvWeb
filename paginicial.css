@@ -22,6 +22,22 @@ body {
   overflow: hidden;
 }
 
+#muteButton {
+  position: fixed;
+  font-family: "Livvic", sans-serif;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(74, 41, 145, 0.92);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .navbar-tipo-1 {
   background: linear-gradient(180deg, rgba(138, 112, 144, 1) 0%, #626868 100%);
   padding: 0px 80px;
