@@ -486,6 +486,7 @@ footer {
 .icones:hover {
   transform: scale(1.3) rotate(10deg);
 }
+
 @media(max-width: 1200px) {
   .navbar-tipo-1 {
     padding: 0px 40px;
@@ -558,7 +559,16 @@ footer {
     height: auto;
   }
 }
+
 @media (max-width: 480px) {
+  html,
+  body {
+    background: url('./imagens/chrono_img/chrono-trigger-guia-conquistas1.png') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .navbar-tipo-1 {
     flex-direction: column;
     padding: 20px;

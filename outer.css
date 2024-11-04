@@ -6,7 +6,7 @@ body {
   height: 100%;
   background: url('./imagens/outer_img/outer-wilds-guia.png') center;
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -41,6 +41,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -58,9 +59,9 @@ body {
   padding: 0px 80px;
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
-  align-self: stretch;  
+  align-self: stretch;
   height: 48px;
   position: relative;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -216,9 +217,9 @@ body {
 }
 
 .conq-padrao:hover {
-  transform: translateY(10px) scale(1.02); 
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); 
-  background-color: rgba(22, 27, 51, 0.7); 
+  transform: translateY(10px) scale(1.02);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(22, 27, 51, 0.7);
 }
 
 .imgs-icon {
@@ -334,12 +335,11 @@ body {
   position: relative;
   align-self: stretch;
 }
+
 footer {
-  background: linear-gradient(
-    180deg,
-    rgba(45, 25, 118, 1) 0%,
-    rgba(46, 26, 86, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(45, 25, 118, 1) 0%,
+      rgba(46, 26, 86, 1) 100%);
   padding: 24px 80px 24px 80px;
   display: flex;
   flex-direction: row;
@@ -351,6 +351,7 @@ footer {
   position: relative;
   box-shadow: inset 0px 7px 7px 0px rgba(0, 0, 0, 0.17);
 }
+
 .feito-por-nicole-julek-klazura {
   color: #fcf7ff;
   text-align: left;
@@ -361,6 +362,7 @@ footer {
   position: relative;
   flex: 1;
 }
+
 .social-icons {
   display: flex;
   flex-direction: row;
@@ -370,6 +372,7 @@ footer {
   flex: 1;
   position: relative;
 }
+
 .icones {
   flex-shrink: 0;
   width: 24px;
@@ -388,7 +391,8 @@ footer {
     padding: 0px 40px;
   }
 
-  .silk-shadows, .guias {
+  .silk-shadows,
+  .guias {
     font-size: 24px;
     width: 100%;
   }
@@ -423,13 +427,23 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+  html,
+  body {
+    background: url('./imagens/outer_img/outer-wilds-guia1.png') center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .navbar-tipo-1 {
     flex-direction: column;
     padding: 20px;
     height: 100%;
   }
 
-  .silk-shadows, .guias {
+  .silk-shadows,
+  .guias {
     font-size: 20px;
     width: auto;
     text-align: center;
