@@ -427,15 +427,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
-  html,
-  body {
-    background: url('./imagens/outer_img/outer-wilds-guia1.png') center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   .navbar-tipo-1 {
     flex-direction: column;
     padding: 20px;
